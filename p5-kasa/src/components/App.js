@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 import "../styles/App.css";
-import RoutesPath from "../src/routes/RoutesPath";
+import RoutesPath from "../routes/RoutesPath"; 
 
 function App() {
-    return(
+    return (
         <div className="App">
-            <RoutesPath/>
+            <RoutesPath />
         </div>
     );
 }

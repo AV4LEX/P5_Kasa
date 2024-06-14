@@ -1,24 +1,27 @@
-import { BrowserRouter as Routes, Route, Navigate, BrowserRouter } from 'react-router-dom';
-import Layout from "../components/layout";
-import Home from './Home';
-import About from "../pages/About";
-import Lodging from './Lodging';
-import NotFound from './NotFound';
+// src/routes/RoutesPath.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from '../components/Layout'; // Import du composant Layout
+import Home from '../pages/Home'; // Chemin mis à jour vers Home
+import About from '../pages/About'; // Chemin mis à jour vers About
+import Lodging from '../pages/Lodging'; // Chemin mis à jour vers Lodging
+import NotFound from '../pages/NotFound'; // Chemin mis à jour vers NotFound
 
 function RoutesPath() {
     return (
-        <BrowserRouter>
+        <Router>
             <Layout>
                 <Routes>
-                    <Route element={<Navigate replace to={"/Home"} />} path="/"/>
+                    <Route path="/" element={<Home />} />
                     <Route path="/home" element={<Home />} />
-                    <Route path="/lodging" element={<Lodging />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/notfound" element={<NotFound />} />
+                    <Route path="/lodging" element={<Lodging />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>
-        </BrowserRouter>
+        </Router>
     );
 }
 
 export default RoutesPath;
+
