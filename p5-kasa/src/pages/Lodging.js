@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/Layout.css";
+import "../styles/Lodging.scss";
+
 function Lodging() {
     console.log("function ok 4");
 

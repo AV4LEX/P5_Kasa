@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Layout.css";
+import "../styles/Layout.scss";
 function NotFound() {
     return (
         <div>

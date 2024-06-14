@@ -1,0 +1,39 @@
+.banner {
+  border-radius: 25px;
+  height: 223px;
+  max-width: 1440px;
+  margin-bottom: 80px;
+  position: relative;
+
+  > img {
+      border-radius: 25px;
+      height: 223px;
+      object-fit: cover;
+      width: 100%;
+  }
+
+  .dark-banner {
+      background-color: #000000;
+      border-radius: 25px;
+      height: 223px;
+      left: 0;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+
+  .banner-text {
+      color: #ffffff;
+      font-size: 48px;
+      width: 100%;
+      text-align: center; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+ }
+}

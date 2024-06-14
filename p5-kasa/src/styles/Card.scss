@@ -1,0 +1,43 @@
+.card {
+  border-radius: 10px;
+  height: 340px;
+  width: 340px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+      background: linear-gradient(180deg, #ff6060 85%, #000000a6 100%);
+      cursor: pointer;
+  }
+
+  > img {
+      border-radius: 10px;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+      transition: opacity 0.3s;
+
+      &:hover {
+          opacity: 0.30;
+      }
+  }
+
+  .dark-card {
+      background: linear-gradient(180deg, #ffffff00 0%, #00000080 100%);
+      border-radius: 10px;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+
+  .card-title {
+      bottom: 20px;
+      color: #ffffff;
+      font-size: 18px;
+      left: 20px;
+      margin-right: 20px;
+      position: absolute;
+  }
+}
