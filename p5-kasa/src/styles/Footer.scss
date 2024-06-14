@@ -1,0 +1,23 @@
+footer {
+  height: 200px;
+  margin-top: 35px;
+  position: relative;
+
+  #footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding: 25px 0;
+    background-color: #000000;
+
+    > img {
+      display: block;
+      margin: auto;
+    }
+
+    > p {
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
