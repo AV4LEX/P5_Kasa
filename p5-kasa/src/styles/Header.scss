@@ -1,0 +1,26 @@
+header {
+    height: 209px;
+    max-width: 1440px;
+    margin-top: 35px;
+    position: relative;
+
+    #header-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        a {
+            color: black; /* Couleur initiale du texte */
+        }
+
+        a:visited {
+            color: black; /* Couleur une fois le lien visité */
+        }
+    }
+}
