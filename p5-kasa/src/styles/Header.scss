@@ -1,6 +1,8 @@
 header {
     height: 125px;
-    max-width: 1440px;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     position: relative;
 
@@ -12,15 +14,18 @@ header {
         .header-nav {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 60px;
+            font-size: 24px;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
         }
 
         a {
-            color: black; /* Couleur initiale du texte */
+            color: black; 
         }
 
         a:visited {
-            color: black; /* Couleur une fois le lien visité */
+            color: black; 
         }
     }
 }

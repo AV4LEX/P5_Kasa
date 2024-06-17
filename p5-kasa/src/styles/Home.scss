@@ -1,15 +1,19 @@
 .lodging-list {
     background-color: #f6f6f6;
     border-radius: 25px;
-    max-width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Équivalent à "1fr 1fr 1fr" */
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;
     gap: 50px 50px;
     padding: 50px 50px;
 
         & a{
             background-color: unset;
             max-width: 340px;
+            display: grid;
             grid-template-columns: 1fr;
             padding: 0;
         }
