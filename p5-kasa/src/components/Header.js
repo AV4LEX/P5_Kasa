@@ -3,6 +3,7 @@ import "./../styles/Header.scss";
 import { NavLink } from "react-router-dom";
 import logoheader from "./../assets/images/logoheader.svg";
 
+
 function Header() {
     return (
         <header>
@@ -10,7 +11,7 @@ function Header() {
                 <img className="header-img" src={logoheader} alt="Logo"/>
                 <nav className="header-nav">
                     <NavLink to="/">Accueil</NavLink>
-                    <NavLink to="/pages/About">À propos</NavLink>
+                    <NavLink to="/about" activeClassName="active">À propos</NavLink>
                 </nav>
             </div>
         </header>
