@@ -1,18 +1,14 @@
 import React from "react";
-import "../styles/Lodging.scss";
+import "./lodging.scss";
+import { useParams, Navigate } from 'react-router-dom';
+import LodgingList from "../../assets/api/lodging.json";
+import SlideShow from "../../components/Slideshow.js";
+
 
 function Lodging() {
-    console.log("function ok 4");
 
-    return (
-        <footer>
-            <section>
-                <p>Ceci est la section Lodging</p>
-                
-                </section>
-        </footer>
-    )
+}
     
-  }
+
   
   export default Lodging;

@@ -40,7 +40,7 @@
         width: 100%;
     
         .collapse-arrow-img {
-        transition: transform 0.3s ease;
+        transition: transform 0.3s linear;
           &:hover {
             cursor: pointer;
           }
