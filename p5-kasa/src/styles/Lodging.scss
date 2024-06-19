@@ -1,0 +1,127 @@
+.sheet {
+    color: #ff6060;
+
+    .land-lord {
+        display: inline-flex;
+        width: 100%;
+
+        > div {
+            flex: 1 0 auto;
+        }
+
+        .info {
+            flex-direction: column;
+        }
+
+        .lodging-title {
+            font-size: 36px;
+        }
+
+        .location {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .land-lord-info {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 25px;
+        }
+
+        .land-lord-name {
+            font-size: 18px;
+            margin-right: 10px;
+            text-align: right;
+            width: 100px;
+        }
+
+        .land-lord-img {
+            border-radius: 50%;
+            height: 64px;
+            object-fit: cover;
+            width: 64px;
+        }
+
+        .rating {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+
+            .star {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .equipment-description {
+            display: inline-flex;
+            gap: 0 75px;
+            line-height: 22.5px;
+            list-style: none;
+            margin-top: 25px;
+            width: 100%;
+
+            > .collapse {
+                width: 50%;
+            }
+        }
+    }
+
+    .lodging-title {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .location {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .tag {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 10px 0;
+    }
+
+    .tags > .tag {
+        margin-left: 0px;
+        min-width: 50px;
+    }
+
+    .rating {
+        display: inline-flex;
+        justify-content: flex-end;
+        margin-top: 25px;
+        width: 100%;
+
+        .star {
+            height: 25px;
+            width: 25px;
+        }
+    }
+
+    .land-lord-info {
+        margin-bottom: unset;
+        width: 100%;
+    }
+
+    .land-lord-img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .equipment-description {
+        display: block;
+
+        > .collapse {
+            width: 100%;
+        }
+    }
+
+    .collapse {
+        margin-bottom: 20px;
+    }
+}

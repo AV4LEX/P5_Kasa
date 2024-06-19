@@ -2,44 +2,46 @@ import React, { useState } from "react";
 import "../styles/Slideshow.scss";
 import SlideArrow from "../assets/images/slide-arrow.svg";
 
-function SlideShow({images}) {
-    /*state hook*/
+function SlideShow({ images }) {
     let [displayImg, changeImg] = useState(0);
-    let number_img = images.lenght;
+    let number_img = images.length;
 
     const PREVIEW_IMAGE = () => {
-        if(displayImg === 0) {
+        if (displayImg === 0) {
             changeImg(number_img - 1);
         } else {
             changeImg(displayImg - 1);
         }
-        return(changeImg);
     };
 
     const NEXT_IMAGE = () => {
-        if(displayImg === 0) {
-            changeImg(number_img + 1);
+        if (displayImg === number_img - 1) {
+            changeImg(0);
         } else {
             changeImg(displayImg + 1);
         }
-        return(changeImg);
     };
 
-    return(
-        <div className="carrousel">
-            {
-                number_img > 1 && <img className="slide-arrow left-slide-arrow" src={SlideArrow} alt="contenu précédent" onClick={PREVIEW_IMAGE}/>
-            }
-            {
-                images.map((image, index) => {
-                    return(
-                        <img key={index} className={index === displayImg ? 'slide-show-img on' : 'slide-show-img'} src={image} alt="Logement"/>
-                    )
-                })
-            }
-            {
-                number_img > 1 && <img className="slide-arrow right-slide-arrow" src={SlideArrow} alt="Contenu suivant" onClick={NEXT_IMAGE}/>
-            }
+    return (
+        <div className="carousel">
+            {number_img > 1 && (
+                <button className="slide-arrow left-slide-arrow" onClick={PREVIEW_IMAGE}>
+                    <img src={SlideArrow} alt="Previous" />
+                </button>
+            )}
+            {images.map((image, index) => (
+                <img
+                    key={index}
+                    className={index === displayImg ? 'slide-show-img on' : 'slide-show-img'}
+                    src={image}
+                    alt="Housing"
+                />
+            ))}
+            {number_img > 1 && (
+                <button className="slide-arrow right-slide-arrow" onClick={NEXT_IMAGE}>
+                    <img src={SlideArrow} alt="Next" />
+                </button>
+            )}
         </div>
     );
 }

@@ -1,11 +1,10 @@
-// src/routes/RoutesPath.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from '../components/Layout'; // Import du composant Layout
-import Home from '../pages/Home'; // Chemin mis à jour vers Home
-import About from '../pages/About'; // Chemin mis à jour vers About
-import Lodging from '../pages/Lodging'; // Chemin mis à jour vers Lodging
-import NotFound from '../pages/NotFound'; // Chemin mis à jour vers NotFound
+import Layout from '../components/Layout';
+import Home from '../pages/Home';
+import About from '../pages/About';
+import Lodging from '../pages/Lodging';
+import NotFound from '../pages/NotFound';
 
 function RoutesPath() {
     return (
@@ -15,7 +14,7 @@ function RoutesPath() {
                     <Route path="/" element={<Home />} />
                     <Route path="/home" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/lodging" element={<Lodging />} />
+                    <Route path="/lodging/:id" element={<Lodging />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </Layout>
@@ -24,4 +23,3 @@ function RoutesPath() {
 }
 
 export default RoutesPath;
-

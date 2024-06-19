@@ -18,14 +18,20 @@ header {
             font-size: 24px;
             font-weight: 500;
             font-family: 'Montserrat', sans-serif;
-        }
 
-        a {
-            color: black; 
-        }
+            a {
+                color: black;
+                text-decoration: none;
+                transition: color 0.3s ease;
 
-        a:visited {
-            color: black; 
+                &.active {
+                    color: #FF6060; 
+                }
+
+                &:hover {
+                    color: #FF6060; 
+                }
+            }
         }
     }
 }
