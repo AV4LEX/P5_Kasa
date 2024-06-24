@@ -48,7 +48,7 @@ function Lodging() {
                 <div className="description">
                     <div className="land-lord-info">
                         <span className="land-lord-name">{LODGING_SHEET.host.name}</span>
-                        <img className="land-lord-frame" src={LODGING_SHEET.host.picture} alt="Propriétaire" />
+                        <img className="land-lord-img" src={LODGING_SHEET.host.picture} alt="Propriétaire" />
                     </div>
                     <div className="rating">{lodging_rating}</div>
                 </div>

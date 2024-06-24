@@ -16,7 +16,8 @@
       display: inline-flex;
       height: 25%;
       min-height: 50px;
-      width: 1023px;
+      width: 100%;
+      max-width: inherit;
   
       &-title {
         color: #ffffff;

@@ -4,6 +4,7 @@ import AboutBanner from "../assets/images/AboutBanner.png"
 import "./../styles/Banner.scss";
 import Banner from "../components/banner";
 import Collapse from "../components/Collapse";
+import "../styles/About.scss"
 
 function About() {
     return (
