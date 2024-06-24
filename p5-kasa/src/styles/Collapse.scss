@@ -1,71 +1,95 @@
 .collapse {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    margin: 0 auto 35px;
-    text-align: left;
-    
-    
-  
-    &-header {
-      align-items: center;
-      background-color: #ff6060;
-      border-radius: 5px;
-      display: inline-flex;
-      height: 25%;
-      min-height: 50px;
-      width: 100%;
-      max-width: inherit;
-  
-      &-title {
-        color: #ffffff;
-        height: 50px;
-        line-height: 50px;
-        margin: 5px 10px;
-      }
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 auto 35px;
+  text-align: left;
 
-    .collapse-title {
-        margin-left: 10px;
-        font-size: 24px;
-        font-weight: 700;
-        color: #f6f6f6;
+  &.open {
+    .collapse-description {
+      height: auto; /* Rétablir la hauteur automatique lorsque ouverte */
+      padding: 20px 10px 25px 10px; /* Ajustement du padding */
     }
-  
-    &-arrow {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 10px;
-        width: 100%;
-    
-        .collapse-arrow-img {
-        transition: transform 0.3s linear;
-          &:hover {
-            cursor: pointer;
-          }
-        }
-  
-      &.true .collapse-arrow-img{
-        justify-content: start;
-        transform: rotate(-180deg);
-      }
-    }
-  
-    &-description {
-        
-      background-color: #f6f6f6;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      color: #ff6060;
-      height: 75%;
-      width: 1023px;
-      margin-top: -10px;
-      min-height: 100px;
-      padding: 25px 10px 10px 10px;
-    }
-
-
   }
-  
+
+  &-header {
+    background-color: #ff6060;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 50px; /* Hauteur fixe du header */
+    width: 100%;
+    max-width: inherit;
+    transition: margin-top 0.3s ease; /* Transition pour la marge */
+
+    &.open {
+      margin-bottom: -2px; /* Ajustement de la marge pour le chevauchement */
+    }
+
+    &-title {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 10px; /* Ajout de marges autour du titre */
+    }
+  }
+
+  .collapse-title {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f6f6f6;
+  }
+
+  &-arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    width: 100%;
+
+    .collapse-arrow-img {
+      transition: transform 0.3s linear;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.true .collapse-arrow-img {
+      justify-content: start;
+      transform: rotate(-180deg);
+    }
+  }
+
+  &-description {
+    background-color: #f6f6f6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    flex: 1; /* Utilisation de flex pour occuper tout l'espace restant */
+    width: 100%;
+    max-width: inherit;
+    padding: 20px 10px 10px 10px; /* Ajustement du padding pour la description */
+    overflow: hidden;
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: -5px;
+    }
+
+    li {
+      margin-bottom: 3px;
+    }
+  }
+
+  &.open .collapse-description {
+    max-height: none; /* Afficher la description lorsque ouverte */
+  }
+}
+
+/* Style spécifique pour éviter la marge entre les collapses adjacents */
+.collapse + .collapse {
+  margin-top: 0; /* Annuler la marge entre les collapses adjacents */
+}
