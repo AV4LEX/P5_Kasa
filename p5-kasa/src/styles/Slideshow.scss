@@ -6,12 +6,12 @@
 
     .slide-arrow {
         position: absolute;
-        width: 45px;
+        width: 0px;
         z-index: 1;
+        border: none;
 
         &:hover {
             cursor: pointer;
-            filter: drop-shadow(2px 4px 6px black);
         }
     }
 

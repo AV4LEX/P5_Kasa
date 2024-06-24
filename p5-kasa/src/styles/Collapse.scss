@@ -8,8 +8,8 @@
 
   &.open {
     .collapse-description {
-      height: auto; /* Rétablir la hauteur automatique lorsque ouverte */
-      padding: 20px 10px 25px 10px; /* Ajustement du padding */
+      height: auto; 
+      padding: 20px 10px 25px 10px; 
     }
   }
 
@@ -18,20 +18,20 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
-    height: 50px; /* Hauteur fixe du header */
+    height: 50px; 
     width: 100%;
     max-width: inherit;
-    transition: margin-top 0.3s ease; /* Transition pour la marge */
+    transition: margin-top 0.3s ease; 
 
     &.open {
-      margin-bottom: -2px; /* Ajustement de la marge pour le chevauchement */
+      margin-bottom: -2px; 
     }
 
     &-title {
       color: #ffffff;
       font-size: 24px;
       font-weight: 700;
-      margin: 0 10px; /* Ajout de marges autour du titre */
+      margin: 0 10px; 
     }
   }
 
@@ -66,10 +66,10 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: black;
-    flex: 1; /* Utilisation de flex pour occuper tout l'espace restant */
+    flex: 1; 
     width: 100%;
     max-width: inherit;
-    padding: 20px 10px 10px 10px; /* Ajustement du padding pour la description */
+    padding: 20px 10px 10px 10px; 
     overflow: hidden;
 
     ul {
@@ -85,11 +85,11 @@
   }
 
   &.open .collapse-description {
-    max-height: none; /* Afficher la description lorsque ouverte */
+    max-height: none;
   }
 }
 
-/* Style spécifique pour éviter la marge entre les collapses adjacents */
+
 .collapse + .collapse {
-  margin-top: 0; /* Annuler la marge entre les collapses adjacents */
+  margin-top: 0; 
 }
