@@ -11,17 +11,20 @@ footer {
       padding: 25px 0;
       background-color: #000000;
 
+      > p {
+        color: #ffffff;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+    .footer-logo-link{
+
         > img {
           display: block;
           margin: auto;
           margin-top: 30px;
-        }
-
-        > p {
-          color: #ffffff;
-          text-align: center;
-          font-size: 24px;
-          font-weight: 500;
-        }
+    }
+      }      
   }
 }
