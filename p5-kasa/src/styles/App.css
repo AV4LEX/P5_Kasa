@@ -19,24 +19,15 @@ html, body {
     margin: 0 auto; 
 }
 
-.page-enter {
-    opacity: 0;
-    transform: translateX(100%);
-}
 
-.page-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 300ms, transform 300ms;
-}
 
-.page-exit {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.page-exit-active {
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 300ms, transform 300ms;
+@media screen  and (max-width: 600px) {
+    .App {
+        display: flex;
+        flex-direction: column; 
+        min-height: 100vh;
+        width: 100%;
+        max-width: 335px; 
+        margin: 0 auto; 
+    }
 }

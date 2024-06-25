@@ -19,3 +19,39 @@
         }
     
 }
+
+@media screen  and (max-width: 600px) {
+    .home > .banner {
+        height: 110px;
+        min-width: 335px;
+        margin-bottom: 20px;
+        
+
+
+        >.banner-text {
+            font-size: 24px;
+        }
+
+        >.banner-img  {
+            height: 110px;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        >.dark-banner {
+            height: 110px;
+            width: 100%;
+            border-radius: 4px;
+        }
+        
+    }
+
+    .lodging-list {
+        margin-top: 20px;
+        background-color: unset;
+        gap: 20px 0;
+        grid-template-columns: 1fr;
+        padding: 0;
+        
+    }
+}
