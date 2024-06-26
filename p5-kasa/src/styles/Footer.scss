@@ -28,3 +28,18 @@ footer {
       }      
   }
 }
+
+@media screen and (max-width: 600px) {
+
+  footer {
+
+    #footer-container > p {
+      margin: auto;
+      width: 150px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+  }  
+  
+}

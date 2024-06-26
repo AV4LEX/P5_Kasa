@@ -93,3 +93,12 @@
 .collapse + .collapse {
   margin-top: 0; 
 }
+
+@media screen and (max-width: 600px) {
+
+  .collapse.open .collapse-description {
+    
+    font-size: 12px;
+  
+  }
+}
