@@ -29,3 +29,24 @@
                 }
     
 }
+
+@media screen and (max-width: 600px) {
+    .not-found {
+
+        width: 335px;
+
+        >img {
+            width: 198px;
+            height: 99px;
+        }
+
+        >p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        >a {
+            font-size: 14px;
+        }
+    }
+}
