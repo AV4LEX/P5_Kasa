@@ -130,6 +130,7 @@
     .land-lord {
       display: flex;
       flex-direction: column;
+      height: 140px;
   
       .land-lord-info {
         width: 335px;
@@ -153,7 +154,7 @@
     .description {
       display: flex;
       flex-direction: row-reverse;
-      height: 100px;
+      height: 80px;
     }
   
     .lodging-title {
@@ -202,6 +203,7 @@
       .collapse {
         width: 335px !important;
         margin-bottom: 0 !important;
+        
       }
     }
   }
