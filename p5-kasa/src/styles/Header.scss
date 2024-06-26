@@ -21,11 +21,9 @@ header {
             a {
                 color: black;
                 transition: color 0.3s ease;
-                margin-left: 40px;
-
-                &.active {
-                    color: #000000;
-                }
+                margin-left: 0px;
+                width: 120px;
+                margin-left: 30px;
 
                 &:hover {
                     color: #000000;
@@ -43,21 +41,20 @@ header {
 
     #header-container {
         .header-nav {
-            width: 2000px;
+            width: auto;
             text-transform: uppercase;
-            margin-left: -10px;
 
             a {
                 font-size: 12px;
-                 
-                
-                
+                margin-left: 10px !important;
+                width: 70px !important; 
             }
         }
     }
 
     .header-img {
-        width: 211px;
+        width: 150px;
         height: 46px;
+        margin-right: 35px;
     }
 }
