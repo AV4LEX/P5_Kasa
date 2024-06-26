@@ -4,3 +4,62 @@
         margin-bottom: 35px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .About > .banner{
+
+        height: 110px;
+        min-width: 335px;
+        margin-bottom: 20px;
+        
+
+
+        >.banner-text {
+            font-size: 24px;
+        }
+
+        >.banner-img  {
+            height: 110px;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        >.dark-banner {
+            height: 110px;
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    .About > .collapse{
+
+        width: 335px;
+        height: 30px;
+        margin-bottom: 20px;
+        
+    }
+
+    .collapse {
+        .collapse-title {
+            font-size: 13px; 
+        }
+    }
+
+    .collapse-arrow-img {
+        width: 16px;
+    }
+
+    .collapse-arrow.true {
+        width: 335px;
+        height: 30px;
+    }
+
+    .collapse.open {
+        height: auto;
+    }
+
+    .collapse-header{
+        width: 335px;
+        height: 30px;
+    }
+}
