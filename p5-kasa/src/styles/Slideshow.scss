@@ -1,4 +1,4 @@
-.carousel {
+.slide-show {
     position: relative;
     width: 100%;
     height: 415px;
@@ -59,6 +59,34 @@
       .slide-show-img {
         height: 255px;
       }
+
+      @media screen and (max-width: 600px) {
+        .slide-show {
+            width: 335px;
+            height: 255px;
+    
+            .slide-show-img {
+                width: 335px;
+                height: 255px;
+            }
+    
+            .left-slide-arrow,
+            .right-slide-arrow {
+                img {
+                    width: 24px !important;
+                    height: 24px !important;
+                }
+            }
+    
+            .left-slide-arrow {
+                margin-left: 10px;
+            }
+    
+            .right-slide-arrow {
+                margin-right: 10px;
+            }
+        }
+    }
 
   
   

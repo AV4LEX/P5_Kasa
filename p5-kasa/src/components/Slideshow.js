@@ -23,7 +23,7 @@ function SlideShow({ images }) {
     };
 
     return (
-        <div className="carousel">
+        <div className="slide-show">
             {number_img > 1 && (
                 <button className="slide-arrow left-slide-arrow" onClick={PREVIEW_IMAGE}>
                     <img src={SlideArrow} alt="Previous" />
