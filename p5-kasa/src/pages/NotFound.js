@@ -2,6 +2,12 @@ import React from "react";
 import "../styles/Layout.scss";
 import NotFoundImage from "../assets/images/404.png";
 import "../styles/NotFound.scss";
+
+/**
+ * Component for displaying a 404 Not Found error page.
+ * 
+ * @returns {JSX.Element} JSX for the NotFound component
+ */
 function NotFound() {
     return (
         <div className="not-found">
