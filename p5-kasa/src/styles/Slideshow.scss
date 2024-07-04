@@ -45,6 +45,19 @@
             z-index: 0;
         }
     }
+
+    .slide-show-counter {
+        position: absolute;
+        bottom: 10px; // Positionner en bas du conteneur
+        left: 50%; // Centrer horizontalement
+        transform: translateX(-50%); // Centrer parfaitement
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        z-index: 2;
+        font-size: 18px;
+        font-weight: 500;
+    }
 }
 
   

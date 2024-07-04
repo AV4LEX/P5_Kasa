@@ -44,6 +44,9 @@ function SlideShow({ images }) {
                     <img src={SlideArrow} alt="Previous" />
                 </button>
             )}
+            <div className="slide-show-counter">
+                {displayImg + 1} / {number_img}
+            </div>
             {images.map((image, index) => (
                 <img
                     key={index}
