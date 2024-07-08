@@ -17,7 +17,7 @@ function SlideShow({ images }) {
     /**
      * Function to show the previous image in the slideshow
      */
-    const PREVIEW_IMAGE = () => {
+    const PREVIOUS_IMAGE = () => {
         if (displayImg === 0) {
             changeImg(number_img - 1); // Wrap around to the last image if at the first image
         } else {
@@ -40,7 +40,7 @@ function SlideShow({ images }) {
         <div className="slide-show">
             {number_img > 1 && (
                 // Render left arrow button if there is more than one image
-                <button className="slide-arrow left-slide-arrow" onClick={PREVIEW_IMAGE}>
+                <button className="slide-arrow left-slide-arrow" onClick={PREVIOUS_IMAGE}>
                     <img src={SlideArrow} alt="Previous" />
                 </button>
             )}
