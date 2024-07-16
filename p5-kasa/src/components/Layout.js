@@ -1,7 +1,7 @@
-import React from "react"; // Import React Library
-import Header from "./Header"; // Import Header from composant
-import Footer from "./Footer"; // Import Footer from composant
-import "../styles/Layout.scss"; // Import SCSS files
+import React from "react"; 
+import Header from "./Header"; 
+import Footer from "./Footer"; 
+import "../styles/Layout.scss"; 
 
 /**
  * Layout component represents the overall layout structure of the application.
@@ -14,14 +14,14 @@ import "../styles/Layout.scss"; // Import SCSS files
  */
 function Layout({ children }) {
     return (
-        <div className="Layout"> {/* Container for the entire layout */}
-            <Header /> {/* Render the Header component */}
-            <main>{children}</main> {/* Render the main content passed as children */}
-            <Footer /> {/* Render the Footer component */}
+        <div className="Layout"> 
+            <Header /> 
+            <main>{children}</main> 
+            <Footer /> 
         </div>
     );
 }
 
-export default Layout; // Export the Layout component as the default export
+export default Layout; 
 
 

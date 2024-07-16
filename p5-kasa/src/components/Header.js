@@ -1,7 +1,7 @@
-import React from "react"; // Import React Library
-import "../styles/Header.scss"; // Import SCSS files
-import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom for the nav
-import logoheader from "./../assets/images/logoheader.svg"; // Import logo image
+import React from "react";
+import "../styles/Header.scss"; 
+import { NavLink } from "react-router-dom"; 
+import logoheader from "./../assets/images/logoheader.svg"; 
 
 /**
  * Header component represents the header section of the application.
@@ -12,15 +12,15 @@ import logoheader from "./../assets/images/logoheader.svg"; // Import logo image
 function Header() {
     return (
         <header>
-            <div id="header-container"> {/* Container for the header content */}
-                <img className="header-img" src={logoheader} alt="Logo"/> {/* Logo image */}
-                <nav className="header-nav"> {/* Navigation links */}
-                    <NavLink to="/" end>Accueil</NavLink> {/* NavLink for the homepage */}
-                    <NavLink to="/about">À propos</NavLink> {/* NavLink for the about page */}
+            <div id="header-container"> 
+                <img className="header-img" src={logoheader} alt="Logo"/> 
+                <nav className="header-nav"> 
+                <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>Accueil</NavLink> 
+                <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")}>À propos</NavLink> 
                 </nav>
             </div>
         </header>
     );
 }
 
-export default Header; // Export the Header component as the default export
+export default Header; 

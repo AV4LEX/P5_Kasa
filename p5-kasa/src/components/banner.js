@@ -1,5 +1,5 @@
-import React from "react"; // Import the React library
-import "./../styles/Banner.scss"; // Import the SCSS file for styling
+import React from "react";
+import "./../styles/Banner.scss";
 
 /**
  * Banner component displays an image with a text overlay.
@@ -12,12 +12,12 @@ import "./../styles/Banner.scss"; // Import the SCSS file for styling
  */
 function Banner({ image, text }) {
     return (
-        <div className="banner"> {/* Main container for the Banner component */}
-            <img className="banner-img" src={image} alt="banner" /> {/* Banner image */}
-            <div className="dark-banner"></div> {/* Dark overlay on the banner */}
-            <span className="banner-text">{text}</span> {/* Text displayed on the banner */}
+        <div className="banner"> 
+            <img className="banner-img" src={image} alt="banner" />
+            <div className="dark-banner"></div>
+            <span className="banner-text">{text}</span>
         </div>
     );
 }
 
-export default Banner; // Export the Banner component as the default export
+export default Banner;

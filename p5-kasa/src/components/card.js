@@ -1,5 +1,5 @@
-import React from "react"; // Import the React library
-import "./../styles/Card.scss"; // Import the SCSS file for styling
+import React from "react"; 
+import "./../styles/Card.scss"; 
 
 /**
  * Card component displays an image with a title overlay.
@@ -13,12 +13,12 @@ import "./../styles/Card.scss"; // Import the SCSS file for styling
  */
 function Card({ id, image, title }) {
     return (
-        <div className="card" id={id}> {/* Main container for the Card component */}
-            <img className="card-img" src={image} alt="card" /> {/* Card image */}
-            <div className="dark-card"></div> {/* Dark overlay on the card */}
-            <span className="card-title">{title}</span> {/* Title displayed on the card */}
+        <div className="card" id={id}> 
+            <img className="card-img" src={image} alt="card" /> 
+            <div className="dark-card"></div> 
+            <span className="card-title">{title}</span> 
         </div>
     );
 }
 
-export default Card; // Export the Card component as the default export
+export default Card; 

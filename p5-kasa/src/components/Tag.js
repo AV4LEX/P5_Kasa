@@ -1,5 +1,5 @@
-import React from "react"; // Import React library
-import "../styles/Tag.scss"; // Import SCSS file for Tag component styling
+import React from "react";
+import "../styles/Tag.scss";
 
 /**
  * Tag component displays a tag with a specified name.
@@ -11,8 +11,8 @@ import "../styles/Tag.scss"; // Import SCSS file for Tag component styling
  */
 function Tag({ name }) {
     return (
-        <span className="tag">{name}</span> // Render a span element with the 'tag' class and display the name
+        <span className="tag">{name}</span>
     );
 }
 
-export default Tag; // Export the Tag component as the default export
+export default Tag; 

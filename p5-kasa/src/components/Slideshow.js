@@ -1,6 +1,6 @@
-import React, { useState } from "react"; // Import React and useState hook
-import "../styles/Slideshow.scss"; // Import SCSS file for slideshow styling
-import SlideArrow from "../assets/images/slide-arrow.svg"; // Import slide arrow icon image
+import React, { useState } from "react"; 
+import "../styles/Slideshow.scss"; 
+import SlideArrow from "../assets/images/slide-arrow.svg"; 
 
 /**
  * SlideShow component displays a slideshow of images with navigation arrows.
@@ -11,52 +11,48 @@ import SlideArrow from "../assets/images/slide-arrow.svg"; // Import slide arrow
  * @returns {JSX.Element} The JSX code for the SlideShow component
  */
 function SlideShow({ images }) {
-    const [displayImg, changeImg] = useState(0); // State to track the index of the currently displayed image
-    const number_img = images.length; // Total number of images in the slideshow
+    const [displayImg, changeImg] = useState(0); 
+    const number_img = images.length; 
 
-    /**
-     * Function to show the previous image in the slideshow
-     */
+
     const PREVIOUS_IMAGE = () => {
         if (displayImg === 0) {
-            changeImg(number_img - 1); // Wrap around to the last image if at the first image
+            changeImg(number_img - 1); 
         } else {
-            changeImg(displayImg - 1); // Move to the previous image
+            changeImg(displayImg - 1); 
         }
     };
 
-    /**
-     * Function to show the next image in the slideshow
-     */
+
     const NEXT_IMAGE = () => {
         if (displayImg === number_img - 1) {
-            changeImg(0); // Wrap around to the first image if at the last image
+            changeImg(0); 
         } else {
-            changeImg(displayImg + 1); // Move to the next image
+            changeImg(displayImg + 1); 
         }
     };
 
     return (
         <div className="slide-show">
             {number_img > 1 && (
-                // Render left arrow button if there is more than one image
                 <button className="slide-arrow left-slide-arrow" onClick={PREVIOUS_IMAGE}>
                     <img src={SlideArrow} alt="Previous" />
                 </button>
             )}
+            {number_img > 1 && (
             <div className="slide-show-counter">
                 {displayImg + 1} / {number_img}
             </div>
+            )}
             {images.map((image, index) => (
                 <img
                     key={index}
                     className={index === displayImg ? 'slide-show-img on' : 'slide-show-img'}
                     src={image}
-                    alt="Housing"
+                    alt="logement"
                 />
             ))}
             {number_img > 1 && (
-                // Render right arrow button if there is more than one image
                 <button className="slide-arrow right-slide-arrow" onClick={NEXT_IMAGE}>
                     <img src={SlideArrow} alt="Next" />
                 </button>
@@ -65,4 +61,4 @@ function SlideShow({ images }) {
     );
 }
 
-export default SlideShow; // Export the SlideShow component as the default export
+export default SlideShow; 

@@ -48,9 +48,9 @@
 
     .slide-show-counter {
         position: absolute;
-        bottom: 10px; // Positionner en bas du conteneur
-        left: 50%; // Centrer horizontalement
-        transform: translateX(-50%); // Centrer parfaitement
+        bottom: 10px; 
+        left: 50%; 
+        transform: translateX(-50%); 
         color: white;
         padding: 5px 10px;
         border-radius: 5px;
@@ -89,6 +89,10 @@
                     width: 24px !important;
                     height: 24px !important;
                 }
+            }
+
+            .slide-show-counter{
+                display: none;
             }
     
             .left-slide-arrow {

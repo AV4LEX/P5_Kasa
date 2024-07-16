@@ -191,10 +191,10 @@
   
     .rating {
       display: inline-flex;
-      flex-direction: row-reverse;
-      justify-content: flex-end;
+      justify-content: flex-start;
       margin-top: 25px;
       width: 100%;
+      margin-left: -95px;
   
       .star {
         height: 25px !important;
